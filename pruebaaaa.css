@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-image: url(aguas.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    background-color: #f89537;
+}
+
+.interior {
+    max-width: 100%;
+    padding: 0 10px;
+    margin: auto;
+}
+
+.logo {
+    float: left;
+    padding: 5px 20px 0;
+}
+
+.logo img {
+    height: 80px;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+.navegacion {
+    display: flex;
+    align-items: center;
+    min-height: 90px;
+    z-index: 1000;
+}
+
+.navegacion ul {
+    list-style: none;
+    padding: 0 10px;
+}
+
+.navegacion ul li {
+    display: inline-block;
+    position: relative;
+    transition: .3s linear;
+    z-index: 1000;
+}
+
+.navegacion ul li:hover {
+    transform: scale(1.1);
+}
+
+.navegacion ul li a {
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 20px;
+    transition: .3s linear;
+}
+
+.navegacion ul li a:hover {
+    color: rgb(255, 255, 255);
+    transform: scale(1.1);
+    background-color: rgb(58, 142, 202);
+}
+
+.navegacion ul li:hover .reporteros {
+    display: block;
+}
+
+.navegacion .submenu .reporteros {
+    display: none;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    width: 100%;
+}
+
+.navegacion .submenu .reporteros li {
+    display: block;
+    overflow: hidden;
+    border-bottom: none;
+}
+
+.navegacion .submenu .reporteros li a {
+    display: block;
+}
+
+.dropdown-menu {
+    background-color: #f89537;
+}
+
+/* Estilo para los labels */
+label {
+    color: #ffffff; /* Color de texto para los labels */
+    font-size: 16px; /* Tamaño de fuente para los labels */
+    margin-bottom: 8px; /* Espacio inferior para los labels */
+}
